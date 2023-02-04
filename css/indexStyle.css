@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*font-family: 'Playfair Display', serif;*/
+	font-family: initial;
+}
+
+/*--------------------------------------------Featured Product Container------------------------------------------------------*/
+.container1
+{
+	margin-top: 5vh;
+}
+.heading 
+{
+	margin-top: 3vh;
+	font-size: 50px;
+	text-align: center;
+	font-style: bold;
+	font-size: 4.rem;
+	color: #2c2c54;
+}
+.miniContainer1 
+{
+	background-color: #FAFAFA;
+	width: 98%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.miniContainer1 a 
+{
+	text-decoration: none;
+
+}
+.productBox
+{
+	background-color: #fff;
+	padding: 1vw 4vh;
+	margin-left: 3vw;
+	margin-bottom: 1vw;
+	margin-top: 1vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: .1rem solid rgba(0,0,0,.3);
+	border-radius: 2rem;
+}
+
+
+.productBox img 
+{
+	width: 15vw;
+	height: 20vh;
+}
+.productName 
+{
+	margin-top: 10px;
+	font-style: normal;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+.productPrice 
+{
+
+	font-style: bold;
+	text-align: center;
+	color: #186c7f;
+	font-size: 20px;
+}
+.productBox button 
+{
+	padding: 6px 10px;
+	background-color:#186c7f;
+	text-align: center;
+	color: #fff;
+	border-radius: 6px;
+	border-color: #186c7f;
+	margin-top: 10px;
+	cursor: pointer;
+}
+/*--------------------------------------------Popular Product Container------------------------------------------------------*/
+.container2
+{
+	margin-top: 5vh;
+	background-color: #fff ;
+	background-attachment: fixed;
+}
+.miniContainer2 
+{
+	background-color: #f4f4f4;
+	width: 98%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 2rem;
+}
+.miniContainer2 a 
+{
+	text-decoration: none;
+}
+/* practice for new design .home and .home .content*/
+
+section {
+    padding: 2rem 2%;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+	/*background: #9cd89c;*/
+}
+.home .content span {
+    font-size: 2rem;
+    color: #666;
+}
+.home .content h3 {
+    font-size: 4rem;
+    color: var(--black);
+}
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #186c7f;
+    color: #fff;
+    padding: .4rem 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+	padding-left: 17px;
+	padding-right: 17px;
+	border-radius: 35px;
+}
+.home .content {
+    flex: 2 1 43rem;
+	padding-left: 74px;
+	padding-top: 20px;
+}
+
+.home .image {
+    flex: 0 1 35rem;
+    padding-top: 0rem;
+	
+}
+.home .image img {
+    width: 100%;
+}
+
+
+/*------------------------------------------------------loginform------------------------------------------------*/
+
+@media screen and (max-width: 400px)
+{
+	.slideshow_container
+	{
+		height: 20vh;
+	}
+	.sliderimage img 
+	{
+		height: 20vh;
+	}
+	.heading 
+	{
+		margin-top: 3vh;
+		font-size: 40px;
+	}
+	.productBox
+	{
+		width: 80%;
+	}
+
+	.productBox img 
+	{
+		width: 100%;
+		
+	}
+}
+
+
+/*--------------------------------------------Footer------------------------------------------------------*/
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #eae1e1;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: black;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color:black;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: black;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color:white;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: black;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: black;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 51px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 9px;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    line-height: 28px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: white;
+}
+
+.footer-links a:hover {
+    color:white;
+}
+

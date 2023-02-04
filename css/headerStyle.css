@@ -1,0 +1,357 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: initial;
+}
+.navbar
+{
+	display: flex;
+	flex-direction: row;
+	padding-top: 3vh;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: auto;
+	background: #eae1e1;
+}
+.logo img 
+{
+	width: 8vw;
+	height: 10vh;
+	margin-left: 3vw;
+	margin-bottom: 1vw;
+}
+.searchBar
+{
+	transform: translateY();
+	display: flex;
+	padding-left: 8vw;
+}
+.bar 
+{
+	width: 28vw; height: 5vh;
+	transform: translateY(2vh);
+	border-radius: 14px;
+	padding-left: 175px;
+}
+.searchForm
+{
+	display: flex;
+}
+.searchButton
+{
+	display: flex;
+	justify-content: center; align-items: center;
+	width: 4vw; height: 5vh;
+	background-color:#186c7f ;
+	color: #03420C;
+	border: 0.5px solid grey;
+	transform: translateY(2vh);
+	font-size: 18px;
+	border-radius: 4px;
+}
+.signInOption
+{
+	transform: translateY(2vh);
+	padding-left: 29vw;
+	display: flex;
+	cursor: pointer;
+}
+.signInButton
+{
+	width: 10vh;
+	height: 5vh;
+	background-color: transparent;
+	color: black;
+	font-size: 16px;
+	border-color: transparent;
+	transform: translateY(-0.8vh);
+	cursor: pointer;
+}
+.cart 
+{
+	transform: translateY(2vh);
+	display: flex;
+	padding-left: 5vw;
+	color: black;
+	font-size: 16px;
+}
+.cart a 
+{
+	text-decoration: none;
+	color: black;
+	padding-right: 4px;
+}
+
+.navIcon
+{
+	font-size: 20px;
+}
+.accountDisplay
+{
+	transform: translateY(2vh);
+	padding-left: 9vw;
+	display: flex;
+	cursor: pointer;
+}
+.accountName
+{
+	padding-left: 1vw;
+	display: flex;
+	flex-direction: column;
+}
+.accountName a 
+{
+	text-decoration: none;
+	color: black;
+}
+.logout
+{
+	padding: 1vh 0vw;
+}
+.logout a
+{
+	text-decoration: none;
+	font-weight: 1000;
+}
+/*--------------------------------------------Second Navbar------------------------------------------------------*/
+.navbar2
+{
+	width: 100%;
+	height: 10vh;
+	background-color:#8e839c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4vh;
+}
+.navbar2 ul
+{
+	text-align: center;
+}
+.navbar2 ul li 
+{
+	list-style: none;
+		display: flex;
+	justify-content: center;
+}
+.navbar2 ul li input
+{
+	text-decoration: none;
+	color: #fff;
+	font-size: 19px;
+	margin-right: 13vw;
+	background-color: transparent;
+	border: none;
+	font-weight: bold;
+}
+.loginFormContainer
+{
+	display: none;
+	z-index: 1;
+	position: absolute;
+	flex-direction: column;
+	transform: translateX(-43vw);
+	box-shadow: 3px 3px 20px 3px #186c7f;
+	padding: 5vw 10vh;
+	background-image: url('../img/mn.png');
+	background-size: cover;
+	border-radius: 135px;
+	font-weight: bold;
+}
+.registerFormContainer
+{
+	display: none;
+	z-index: 0;
+	position: absolute;
+	flex-direction: column;
+	transform: translateX(-43vw);
+	box-shadow: 3px 3px 20px 3px #F4EEE2;
+	padding: 5vw 10vh;
+	background-image: url('../img/mn.png');
+	background-size: cover;
+	font-weight: bold;
+}
+.formLogo
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 40px;
+	transform: translateY(-3vh);
+}
+.formLogo img 
+{
+	width: 10vw;
+	height: 20vh;
+	text-align: center;
+	border-radius: 74px;
+}
+.login_input
+{
+	background-color: transparent;
+	box-shadow: 1px 1px 9px 0px #fff;
+	border-color: grey;
+	border-width: 0px 0px 1px 0px;
+	border-radius: 15px;
+	border-style: solid;
+	width: 25vw;
+	height: 4vh;
+	margin-top: 1.3vh;
+	font-size: 17px;
+	font-style: oblique;
+	text-align: center;
+}
+.login_input:focus
+{
+	border-color: transparent;
+}
+.account_type
+{
+	background-color: transparent;
+	box-shadow: 1px 1px 9px 0px #fff;
+	border-color: grey;
+	border-width: 0px 0px 1px 0px;
+	border-radius: 15px;
+	border-style: solid;
+	color: #186c7f;
+	font-size: 17px;
+	font-style: oblique;
+	text-align: center;
+}
+.login_submit
+{
+	margin-left: 35%;
+	width: 7vw;
+	height: 5vh;
+	background-color: #186c7f;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 30px;
+	border-color: transparent;
+	box-shadow: 1px 1px 9px 0px #fff;
+	font-family: 'Lora', serif;
+	font-style: oblique;
+
+}
+.login_submit:hover
+{
+	background-color: #B9E1FA;
+	font-style: normal;
+}
+.login_label
+{
+	font-size: 20px;
+	padding-left: 151px;
+}
+.register_here
+{
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-style: bold;
+	padding-top: 1vh;
+}
+@media screen and (max-width: 400px)
+{
+	.navbar 
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.logo
+	{
+		display: flex;
+		margin: auto;
+		justify-content: center;
+	}
+	.logo img 
+	{
+		width: 35vw;
+		height: 13vh;
+	}
+	.searchBar
+	{
+		display: flex;
+		justify-content: center;
+	}
+	.bar 
+	{
+		width: 75vw; height: 5vh;
+	}
+	
+
+.signInOption
+{
+	transform: translateY(5vh);
+
+	padding-left: 0vw;
+	display: flex;
+	cursor: pointer;
+	justify-content: flex-start;
+}
+
+.cart 
+{
+	transform: translateX(-3vw);
+	justify-content: flex-end;
+}
+
+.accountDisplay
+{
+	transform: translateY(5vh);
+	padding-left: 0vw;
+}
+
+.navbar2 ul
+{
+	display: none;
+}
+} 
+/*-----banner new---*/
+.banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9.5rem;
+    padding-top: 6rem;
+	background-color: #fff7f7;
+}
+
+.banner-container .banner {
+    flex: 0 0 40rem;
+    height: 9rem;
+    overflow: hidden;
+    position: relative;
+}
+.banner-container .banner img {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-container .banner .content {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.banner-container .banner .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+.banner-container .banner .content p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.banner-container .banner {
+    flex: 1 1 40rem;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
